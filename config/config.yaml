@@ -12,3 +12,10 @@ data_validation:
   local_data_file: artifacts/data_ingestion/ecommerce_customer_churn_dataset - Copy.csv
   status_file: artifacts/data_validation/schema.txt
 
+
+data_transformation:
+ root_dir: artifacts/data_transformation
+ local_data_file: artifacts/data_ingestion/ecommerce_customer_churn_dataset - Copy.csv
+ train_csv: artifacts/data_transformation/train.csv
+ test_csv: artifacts/data_transformation/test.csv
+
