@@ -1,14 +1,14 @@
 # Churn-Prediction
-Workflows
-update config.yaml --- we update all the path and direcctory related work
-update schema.yaml --- here we configure the type of columns in the data frame
+Workflows  
+update config.yaml --- we update all the path and direcctory related work  
+update schema.yaml --- here we configure the type of columns in the data frame  
 update params.yaml --- here we provide the hyperparameters of the model
-update the entity --- 
-update the configuration manager in src config
-update the components
-update the pipeline
-update the main.py
-update the app.py
+update the entity ---   
+update the configuration manager in src config  
+update the components -- here we write the logic of the code(ingestion,validation etc)  
+update the pipeline -- make a function to call the stage like ingestion etc  
+update the main.py -- here we are a calling the function made in pipeline  
+update the app.py  
 
 
 # About Data sets

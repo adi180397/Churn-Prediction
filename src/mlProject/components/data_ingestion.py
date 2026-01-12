@@ -5,6 +5,7 @@ import zipfile
 from mlProject.Logging import get_logger
 logger=get_logger(__name__)
 from mlProject.utils.common import get_size
+from pathlib import Path
 
 
 class DataIngestion:

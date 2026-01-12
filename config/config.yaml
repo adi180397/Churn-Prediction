@@ -6,3 +6,9 @@ data_ingestion:
   source_URL: https://github.com/adi180397/Churn-Prediction/raw/refs/heads/main/ecommerce_customer_churn_dataset.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  local_data_file: artifacts/data_ingestion/ecommerce_customer_churn_dataset - Copy.csv
+  status_file: artifacts/data_validation/schema.txt
+

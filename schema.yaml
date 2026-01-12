@@ -1,4 +1,28 @@
-COULMNS:
+COLUMNS:
+  Age: float64
+  Gender: object
+  Country: object
+  City: object
+  Membership_Years: float64
+  Login_Frequency: float64
+  Session_Duration_Avg: float64
+  Pages_Per_Session: float64
+  Cart_Abandonment_Rate: float64
+  Wishlist_Items: float64
+  Total_Purchases: float64
+  Average_Order_Value: float64
+  Days_Since_Last_Purchase: float64
+  Discount_Usage_Rate: float64
+  Returns_Rate: float64
+  Email_Open_Rate: float64
+  Customer_Service_Calls: float64
+  Product_Reviews_Written: float64
+  Social_Media_Engagement_Score: float64
+  Mobile_App_Usage: float64
+  Payment_Method_Diversity: float64
+  Lifetime_Value: float64
+  Credit_Balance: float64
+  Signup_Quarter: object
 
 
 
@@ -9,3 +33,4 @@ COULMNS:
 
 
 TARGET_COLUMN:
+    Churned: int64
