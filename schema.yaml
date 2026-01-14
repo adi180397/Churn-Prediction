@@ -33,4 +33,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-    Churned: int64
+  name: Churned

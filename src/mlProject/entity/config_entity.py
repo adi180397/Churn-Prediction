@@ -15,9 +15,16 @@ class DataValidationConfig:
     status_file: str
     schema: dict
     
+
 @dataclass
 class DataTransformationConfig:
     root_dir: Path
     local_data_file: Path
     train_csv: Path
     test_csv: Path
+    X_train_trans: Path
+    X_test_trans: Path
+    y_train: Path
+    y_test: Path
+    target_column: str
+    

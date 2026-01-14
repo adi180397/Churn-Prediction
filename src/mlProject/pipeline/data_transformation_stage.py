@@ -14,3 +14,4 @@ class DataTranformationPipeline:
         obj_trans=DataTransformation(data_tranformation_config)
 
         obj_trans.train_test_split()
+        obj_trans.transformed()

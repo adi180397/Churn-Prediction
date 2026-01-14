@@ -37,16 +37,21 @@ class ConfigurationManager:
         )
         
         return data_validation_config
-     
     def get_data_datatransformation(self) -> DataTransformationConfig:
         config=self.config.data_transformation
+        schema=self.schema.TARGET_COLUMN
         create_directories([config.root_dir])
         data_tranformation_config=DataTransformationConfig(
             root_dir=config.root_dir,
             local_data_file=config.local_data_file,
             train_csv=config.train_csv,
-            test_csv=config.test_csv
+            test_csv=config.test_csv,
+            X_train_trans=config.X_train_trans,
+            X_test_trans=config.X_test_trans,
+            y_train=config.y_train,
+            y_test=config.y_test,
+            target_column=schema.name
+            
         )
         return data_tranformation_config
-        
     
