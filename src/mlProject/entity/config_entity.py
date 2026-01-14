@@ -28,3 +28,11 @@ class DataTransformationConfig:
     y_test: Path
     target_column: str
     
+@dataclass
+class ModelTrainingConfig:
+    root_dir: Path
+    X_train_trans: Path
+    X_test_trans: Path
+    y_train: Path
+    y_test:  Path
+    model_name: str

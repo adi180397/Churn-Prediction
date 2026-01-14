@@ -1,6 +1,6 @@
 from src.mlProject.constants import *
 from src.mlProject.utils.common import read_yaml, create_directories
-from src.mlProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from src.mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig, DataTransformationConfig,ModelTrainingConfig
 
 
 
@@ -55,3 +55,20 @@ class ConfigurationManager:
         )
         return data_tranformation_config
     
+    
+    def get_model_training_config(self)-> ModelTrainingConfig:
+        config=self.config.model_trainer
+        create_directories([config.root_dir])
+        model_training_config=ModelTrainingConfig(
+            root_dir=config.root_dir,
+            X_test_trans=config.X_test_trans,
+            X_train_trans=config.X_train_trans,
+            y_train=config.y_train,
+            y_test=config.y_test,
+            model_name=config.model_name
+            
+            
+        )
+        
+        return model_training_config
+        
